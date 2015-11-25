@@ -7,7 +7,7 @@ function Controller(){
 	 *            Private Variables
 	 ------------------------------------------------*/
 
-	var /** @type {Controller} */ that = this;
+	var that = this;
 	var /** @type {App} */ _app;
 	/*-------------------------------------------------
 	 *

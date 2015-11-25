@@ -6,7 +6,7 @@ function View(){
 	 *            Private Variables
 	 ------------------------------------------------*/
 
-	var /** @type {View} */ that = this;
+	var that = this;
 	var /** @type {App} */ _app;
 	var /** @type {string} */ _domID;
 

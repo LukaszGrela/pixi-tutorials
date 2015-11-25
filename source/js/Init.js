@@ -3,7 +3,7 @@
  */
 (function(){
 	var /** @type {App} */ application;
-
+	var /** @type {PreloaderView} */ preloader = new PreloaderView();
 	$( window ).on( { "load": preload, "unload": destroy } );
 
 	function onError(){
@@ -24,7 +24,11 @@
 	}
 
 	function preload(){
+		preloader.init(new Model());
+
 		var loader = PIXI.loader;
+
+
 
 		loader.add( [ { "name": "atlas", "url": "source/resources/treasureHunter.json" } ] );
 		loader.on( 'progress', onProgress ); // called once per loaded/errored file
@@ -40,6 +44,8 @@
 	 *
 	 */
 	function init(){
+		preloader.destroy();
+		preloader = undefined;
 		application = new App();
 		application.init();
 	}

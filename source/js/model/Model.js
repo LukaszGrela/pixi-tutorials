@@ -11,7 +11,7 @@ function Model(){
 	 *            Private Variables
 	 ------------------------------------------------*/
 
-	var /** @type {Model} */ that = this;
+	var that = this;
 
 	var /** @type {App} */ _app;
 	var /** @type {string} */ _domId = "GAME-CONTAINER";
@@ -41,6 +41,10 @@ function Model(){
 	 */
 	that.getDomId = function() {
 		return _domId;
+	}
+
+	that.getFont = function(){
+		return "Arial";
 	}
 	/*-------------------------------------------------
 	 *            Return

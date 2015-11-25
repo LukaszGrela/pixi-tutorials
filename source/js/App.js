@@ -6,7 +6,7 @@ function App(){
 	 *            Private Variables
 	 ------------------------------------------------*/
 
-	var /** @type {App} */ that = this;
+	var that = this;
 
 
 	var /** @type {Model} */ model = new Model();
